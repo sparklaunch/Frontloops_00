@@ -1,6 +1,5 @@
 import "package:flutter/material.dart";
 import "./Panel.dart";
-import "./CardBrain.dart";
 
 class Item extends StatelessWidget {
   Panel panel;
@@ -8,6 +7,14 @@ class Item extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Card(
+      child: Column(
+        children: [
+          Image.asset("./assets/${panel.imageFileName}"),
+          Text(panel.title),
+          Text(panel.description),
+        ],
+      ),
+    );
   }
 }
