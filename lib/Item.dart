@@ -18,7 +18,7 @@ class Item extends StatelessWidget {
             scale: 0.5,
           ),
           SizedBox(
-            height: 30.0,
+            height: 20.0,
           ),
           Text(
             panel.title,
@@ -31,7 +31,7 @@ class Item extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: 20.0,
+            height: 15.0,
           ),
           Text(
             panel.description,
@@ -43,7 +43,7 @@ class Item extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: 25.0,
+            height: 15.0,
           ),
           RichText(
             text: TextSpan(
@@ -90,7 +90,12 @@ class Item extends StatelessWidget {
           ),
         ],
       ),
-      padding: EdgeInsets.all(50.0),
+      padding: EdgeInsets.fromLTRB(
+        50,
+        50,
+        50,
+        30,
+      ),
     );
   }
 }
