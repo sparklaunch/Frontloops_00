@@ -42,9 +42,55 @@ class Item extends StatelessWidget {
               color: textColor,
             ),
           ),
+          SizedBox(
+            height: 25.0,
+          ),
+          RichText(
+            text: TextSpan(
+              children: [
+                WidgetSpan(
+                  child: Transform.translate(
+                    offset: Offset(0, -16),
+                    child: Text(
+                      "\$",
+                      style: TextStyle(
+                        fontFamily: "Roboto",
+                        fontSize: 24.0,
+                        color: stressColor,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ),
+                TextSpan(
+                  text: panel.price.toString(),
+                  style: TextStyle(
+                    fontFamily: "Roboto",
+                    fontSize: 50.0,
+                    color: stressColor,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                WidgetSpan(
+                  child: Transform.translate(
+                    offset: Offset(5, 0),
+                    child: Text(
+                      "/ month",
+                      style: TextStyle(
+                        fontFamily: "Roboto",
+                        fontSize: 20.0,
+                        fontWeight: FontWeight.bold,
+                        color: stressColor,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
         ],
       ),
-      padding: const EdgeInsets.all(50.0),
+      padding: EdgeInsets.all(50.0),
     );
   }
 }

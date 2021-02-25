@@ -36,7 +36,7 @@ class Frontloops extends StatelessWidget {
             ),
           ],
         ),
-        margin: EdgeInsets.fromLTRB(50.0, 50.0, 50.0, 0.0),
+        margin: EdgeInsets.fromLTRB(50.0, 50.0, 50.0, 50.0),
         child: ListView.builder(
           physics: NeverScrollableScrollPhysics(),
           scrollDirection: Axis.vertical,
